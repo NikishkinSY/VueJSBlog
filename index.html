@@ -5,7 +5,9 @@
   </head>
   <body>
     <div id="app">
-      {{ message }}
+      <div class="container">
+        <div v-for="place in places">{{ place.name }}</div>
+      </div>
     </div>
     <script src="./node_modules/vue/dist/vue.js"></script>
     <script src="./node_modules/vue/dist/vue-router.js"></script>
