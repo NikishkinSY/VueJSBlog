@@ -1,16 +1,24 @@
+.app {
+}
+
 .container {
-  display: flex;
+  .flex-center;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .item {
-  text-align: center;
-  width: 20%;
-  background-color: red;
-  min-height: 100px;
-  max-height: 200px;
+  .flex-center;
+  width: 30%;
+  min-height: 200px;
+  max-height: 300px;
   border: 1px;
   border-radius: 5px;
+  background-size: 100%;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

@@ -4,15 +4,15 @@ var app = new Vue({
     places: [
       {
         name: "Caucasian Mountains",
-        img: "CaucasianMountains.jpg"
+        img: "./img/CaucasianMountains.jpg"
       },
       {
         name: "New-York City",
-        img: "NewYorkCity.jpg"
+        img: "./img/NewYorkCity.jpg"
       },
       {
         name: "Thailand Sea",
-        img: "ThailandSea.jpg"
+        img: "./img/ThailandSea.jpg"
       },
     ]
   }

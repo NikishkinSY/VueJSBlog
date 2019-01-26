@@ -5,10 +5,10 @@
     <link href="./less/styles.css" media="screen" rel="stylesheet">
   </head>
   <body>
-    <div id="app">
+    <div class="app" id="app">
       <div class="container">
-        <div class="item" v-for="place in places">{{ place.name }}
-
+        <div class="item" v-for="place in places" v-bind:style="{ backgroundImage: 'url(' + place.img + ')' }">
+          {{ place.name }}
         </div>
       </div>
     </div>
