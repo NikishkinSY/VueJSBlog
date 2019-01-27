@@ -21,3 +21,6 @@
   align-items: center;
   justify-content: space-around;
 }
+.text {
+  text-shadow: 2px 2px 2px #ffffff;
+}
