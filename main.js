@@ -1,6 +1,7 @@
 var app = new Vue({
   el: '#app',
   data: {
+    search: '',
     places: [
       {
         name: "Caucasian Mountains",
@@ -15,5 +16,12 @@ var app = new Vue({
         img: "./img/ThailandSea.jpg"
       },
     ]
+  },
+  computed: {
+    filteredPlaces() {
+      return this.places.filter(event => {
+        return event.name.includes(this.search)      
+      })
+    }
   }
 })

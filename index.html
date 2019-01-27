@@ -3,12 +3,21 @@
   <head>
     <title>Page Title</title>
     <link href="./less/styles.css" media="screen" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
   </head>
   <body>
     <div class="app" id="app">
       <div class="container">
-        <div class="item" v-for="place in places" v-bind:style="{ backgroundImage: 'url(' + place.img + ')' }">
-          <h1 class="text">{{ place.name }}</h1>
+        <div>
+          <input type="text" class="form-control search" v-model="search" placeholder="search">
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="item" v-for="place in filteredPlaces" v-bind:style="{ backgroundImage: 'url(' + place.img + ')' }">
+          <h2 class="text">{{ place.name }}</h2>
         </div>
       </div>
     </div>
