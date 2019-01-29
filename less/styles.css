@@ -1,6 +1,7 @@
 .search {
   margin: 20px 0px;
 }
+
 .container {
   display: flex;
   align-items: center;
@@ -8,6 +9,7 @@
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .item {
   display: flex;
   align-items: center;
@@ -18,12 +20,23 @@
   border: 1px;
   border-radius: 5px;
   background-size: 100%;
+  box-shadow: none;
 }
+.item:hover {
+  box-shadow: 2px 2px 2px #292929;
+}
+
+.text {
+  text-shadow: 2px 2px 2px #ffffff;
+}
+
 .flex-center {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.text {
-  text-shadow: 2px 2px 2px #ffffff;
+
+.description {
+  max-width: 500px;
+  margin: 20px 0px;
 }
